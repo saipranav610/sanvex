@@ -17,7 +17,7 @@ export default function WhySanvex() {
             <Reveal key={t} delay={(i % 2) * 0.1}>
               <div className="flex gap-5 border-l border-white/10 pl-6 transition hover:border-cyan">
                 <Icon className="mt-1 shrink-0 text-cyan" size={26} aria-hidden="true" />
-                <div><h3 className="font-display text-lg font-semibold uppercase tracking-wide">{t}</h3><p className="mt-2 text-mute">{d}</p></div>
+                <div><h3 className="font-display text-2xl">{t}</h3><p className="mt-2 text-mute">{d}</p></div>
               </div>
             </Reveal>
           ))}

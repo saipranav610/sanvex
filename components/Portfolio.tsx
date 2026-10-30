@@ -31,7 +31,7 @@ export default function Portfolio() {
                 </div>
                 <div className="p-6">
                   <p className="label">{p.category}</p>
-                  <h3 className="mt-2 font-display text-xl font-semibold">{p.title}</h3>
+                  <h3 className="mt-2 font-display text-2xl">{p.title}</h3>
                   <p className="mt-2 text-sm text-mute">{p.desc}</p>
                   {p.link ? <a href={p.link} className="btn btn-ghost mt-5">View Project</a>
                     : <button className="btn btn-ghost mt-5" onClick={() => { setActive(p); ref.current?.showModal(); }}>View Details</button>}

@@ -17,7 +17,7 @@ export default function About() {
             <Reveal key={p.n} delay={i * 0.1}>
               <li className="group flex gap-6 py-8">
                 <span className="font-display text-4xl font-bold text-white/15 transition group-hover:text-blue">{p.n}</span>
-                <div><h3 className="font-display text-xl font-semibold uppercase tracking-wide">{p.t}</h3><p className="mt-2 text-mute">{p.d}</p></div>
+                <div><h3 className="font-display text-2xl">{p.t}</h3><p className="mt-2 text-mute">{p.d}</p></div>
               </li>
             </Reveal>
           ))}

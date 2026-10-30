@@ -3,6 +3,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
 body { @apply bg-ink text-white font-sans antialiased overflow-x-hidden; }
 :focus-visible { outline: 2px solid #42C8FF; outline-offset: 3px; }
 @layer components {
+  .text-fade { @apply bg-gradient-to-b from-white to-white/55 bg-clip-text text-transparent; }
   .btn { @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-300; }
   .btn-primary { @apply bg-gradient-to-r from-blue to-cyan text-ink hover:shadow-[0_0_30px_rgba(23,107,255,.5)] hover:-translate-y-0.5; }
   .btn-ghost { @apply border border-white/10 text-white hover:border-cyan/60 hover:bg-white/5; }
@@ -11,3 +12,5 @@ body { @apply bg-ink text-white font-sans antialiased overflow-x-hidden; }
   .grid-bg { background-image: linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%); }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition-duration: .01ms !important; } }
+
+.font-display { font-weight: 400 !important; letter-spacing: -0.015em; }

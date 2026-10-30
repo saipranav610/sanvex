@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import HeroLive from "./HeroLive";
 const panels = [
   { c: "left-[8%] top-[12%] h-24 w-40", d: 0 }, { c: "right-[6%] top-[30%] h-32 w-44", d: 1.2 }, { c: "left-[22%] bottom-[10%] h-20 w-36", d: 2.2 },
 ];
@@ -12,7 +13,7 @@ export default function Hero() {
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-10 px-5 lg:grid-cols-2">
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
           <p className="label mb-6">Creative Digital Agency</p>
-          <h1 className="font-display text-5xl font-bold leading-[1.05] sm:text-7xl">Your Vision.<br /><span className="bg-gradient-to-r from-blue to-cyan bg-clip-text text-transparent">Our Innovation.</span></h1>
+          <h1 className="font-display text-6xl leading-[1.0] sm:text-8xl"><span className="text-fade">Your Vision.</span><br /><span className="bg-gradient-to-r from-blue to-cyan bg-clip-text text-transparent">Our Innovation.</span></h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-mute">We help ambitious businesses build powerful brands, strengthen their digital presence, and turn meaningful connections into measurable growth.</p>
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a href="#contact" className="btn btn-primary">Let&apos;s Build Something <ArrowRight size={18} /></a>
@@ -29,6 +30,7 @@ export default function Hero() {
             </g>
             <circle cx="200" cy="200" r="10" fill="#42C8FF" /><circle cx="200" cy="200" r="30" fill="none" stroke="#42C8FF" opacity=".3" />
           </svg>
+          <HeroLive />
           {panels.map((p, i) => (
             <motion.div key={i} className={`absolute ${p.c} rounded-xl border border-white/15 bg-white/5 p-3 backdrop-blur-md`}
               animate={{ y: [0, -12, 0] }} transition={{ duration: 6, repeat: Infinity, delay: p.d, ease: "easeInOut" }}>

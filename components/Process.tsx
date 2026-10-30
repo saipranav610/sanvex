@@ -17,7 +17,7 @@ export default function Process() {
             <Reveal key={s.n} delay={i * 0.1}>
               <li className="group relative flex gap-5 lg:block">
                 <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 bg-ink font-display font-bold transition group-hover:border-cyan group-hover:text-cyan group-hover:shadow-[0_0_24px_rgba(66,200,255,.4)]">{s.n}</span>
-                <div className="lg:mt-6"><h3 className="font-display text-xl font-semibold">{s.t}</h3><p className="mt-2 text-sm leading-relaxed text-mute">{s.d}</p></div>
+                <div className="lg:mt-6"><h3 className="font-display text-2xl">{s.t}</h3><p className="mt-2 text-sm leading-relaxed text-mute">{s.d}</p></div>
               </li>
             </Reveal>
           ))}

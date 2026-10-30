@@ -24,7 +24,7 @@ export default function Services() {
                   <span className="rounded-xl bg-blue/15 p-3 text-cyan"><Icon size={22} /></span>
                   <ArrowUpRight size={20} className="text-mute transition group-hover:text-cyan" aria-hidden="true" />
                 </div>
-                <h3 className="font-display text-lg font-semibold">{title}</h3>
+                <h3 className="font-display text-xl">{title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-mute">{desc}</p>
                 <p className="mt-5 border-t border-white/10 pt-4 text-xs text-cyan/80">{tags}</p>
               </a>
