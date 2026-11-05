@@ -3,7 +3,7 @@ export const site = {
   name: "SANVEX",
   tagline: "Your Vision. Our Innovation.",
   url: "https://your-domain.com", // replace after deploying
-  email: "", // e.g. "hello@yourdomain.com"
+  email: "sanvexsolutions@gmail.com", // e.g. "hello@yourdomain.com"
   phone: "", // e.g. "+91 00000 00000"
   socials: [
     { name: "Instagram", href: "" },
