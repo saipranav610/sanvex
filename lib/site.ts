@@ -2,7 +2,7 @@
 export const site = {
   name: "SANVEX",
   tagline: "Your Vision. Our Innovation.",
-  url: "https://sanvex-smoky.vercel.app", // replace after deploying
+  url: "https://sanvexsolutions.vercel.app/", // replace after deploying
   email: "sanvexsolutions@gmail.com", // e.g. "hello@yourdomain.com"
   phone: "", // e.g. "+91 00000 00000"
   socials: [

@@ -14,6 +14,10 @@ export const metadata: Metadata = {
 
   description,
 
+  alternates: {
+    canonical: "/",
+  },
+
   verification: {
     google: "uhCYFrJl1z39R8Lxn4PLdgR1es6QXmGXg0YPpb3hmZY",
   },
@@ -21,6 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "SANVEX | Digital Marketing, Branding & Web Development",
     description,
+    url: site.url,
     siteName: "SANVEX",
     type: "website",
   },
